@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <style> .screen {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+   }
+   .screen .div {
+    background-color: #000000;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+   }
+   .screen .frame {
+    position: absolute;
+    width: 1440px;
+    height: 200px;
+    top: 98px;
+    left: -2038px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #6c6c6c;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .SCP-LAB-secure {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top: 473px;
+    left: 3067px;
+   }
+   .screen .image-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 128px;
+    background-color: #514a4a;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #ffffff;
+   }
+   .screen .image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 448px;
+    left: 2616px;
+    object-fit: cover;
+   }
+   .screen .text-wrapper {
+    width: 180px;
+    height: 40px;
+    top: 18px;
+    left: 622px;
+    -webkit-text-stroke: 1px #000000;
+    color: #0e0e0e;
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .group {
+    position: absolute;
+    width: 236px;
+    height: 80px;
+    top: 0;
+    left: 1163px;
+   }
+   .screen .text-wrapper-2 {
+    width: 195px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .fluent-person {
+    position: absolute;
+    width: 39px;
+    height: 40px;
+    top: 468px;
+    left: 2939px;
+   }
+   .screen .text-wrapper-3 {
+    width: 180px;
+    height: 40px;
+    top: 18px;
+    left: 802px;
+    -webkit-text-stroke: 1px #000000;
+    color: #0e0e0e;
+    font-size: 20px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .frame-2 {
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    top: 20px;
+    left: 983px;
+    background-color: #979292;
+    overflow: hidden;
+   }
+   .screen .text-wrapper-4 {
+    width: 151px;
+    height: 24px;
+    top: 7px;
+    left: -8px;
+    color: #030202;
+    font-size: 20px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 428px;
+    left: 1894px;
+   }
+   .screen .frame-3 {
+    position: absolute;
+    width: 1440px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #6c6c6c;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .SCP-LAB-secure-2 {
+    position: absolute;
+    width: 326px;
+    height: 58px;
+    top: 71px;
+    left: 557px;
+   }
+   .screen .image-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+   }
+   .screen .img-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 1240px;
+    background-color: #514a4a;
+    border: 1px solid;
+    border-color: #ffffff;
+   }
+   .screen .frame-4 {
+    position: absolute;
+    width: 650px;
+    height: 350px;
+    top: 349px;
+    left: 420px;
+    background-color: #ffffff;
+   }
+   .screen .div-wrapper {
+    position: absolute;
+    width: 650px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #635d5d;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .text-wrapper-5 {
+    position: absolute;
+    width: 350px;
+    height: 36px;
+    top: 21px;
+    left: 150px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .overlap-group {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 113px;
+    left: 125px;
+    background-color: #635d5d;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .text-wrapper-6 {
+    position: absolute;
+    width: 396px;
+    height: 45px;
+    top: 3px;
+    left: 1px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #8c8989;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .frame-5 {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 196px;
+    left: 125px;
+    background-color: #635d5d;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .text-wrapper-7 {
+    position: absolute;
+    height: 36px;
+    top: 6px;
+    left: 131px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #a4a4a4;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+   }
+   .screen .overlap {
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    top: 260px;
+    left: 250px;
+    background-color: #645d5d;
+   }
+   .screen .text-wrapper-8 {
+    position: absolute;
+    height: 36px;
+    top: 17px;
+    left: 32px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+   }
+   .screen .frame-6 {
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    top: 699px;
+    left: 570px;
+    background-color: #635d5d;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .text-wrapper-9 {
+    width: 350px;
+    height: 30px;
+    top: 24px;
+    left: 0;
+    color: #000000;
+    font-size: 25px;
+    position: absolute;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .frame-wrapper {
+    position: absolute;
+    width: 1440px;
+    height: 60px;
+    top: 964px;
+    left: 0;
+   }
+   .screen .frame-7 {
+    position: relative;
+    height: 60px;
+    background-color: #030000;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #6c6c6c;
+    box-shadow: 0px 4px 4px #00000040;
+   }
+   .screen .vector {
+    position: absolute;
+    width: 40px;
+    height: 39px;
+    top: 14px;
+    left: 99px;
+   }
+   .screen .p {
+    position: absolute;
+    width: 300px;
+    height: 29px;
+    top: -13px;
+    left: 223px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #c20d0d;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .text-wrapper-10 {
+    position: absolute;
+    width: 550px;
+    height: 71px;
+    top: 3px;
+    left: 902px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ff0000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .screen .vector-2 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 17px;
+    left: 45px;
+   }
+   .screen .vector-3 {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 18px;
+    left: 161px;
+   }
+
+   .inpute {
+
+    position: relative;
+    top: -20%;
+
+   }
+   
+   
+   </style>
+ </head>
+ <body>
+
+
+<script> 
+
+function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        
+
+        if (username === "Yarik" && password === "1234") {
+            alert("Login Success!");
+        } else {
+            alert("Wrong name or password.");
+        }
+    }
+
+</script>
+
+
+ <div class="screen">
+ <div class="div">
+ <div class="frame">
+ <img class="SCP-LAB-secure" src="img/image.png" />
+ <div class="image-wrapper"><img class="image" src="img/image-7-2.png" /></div>
+ <div class="text-wrapper">Послуги</div>
+ <div class="group">
+ <div class="text-wrapper-2">Особистий кабінет</div>
+ <img class="fluent-person" src="img/fluent-person-support-24-filled.svg" />
+ </div>
+ <div class="text-wrapper-3">Про компанію</div>
+ <div class="frame-2">
+ <div class="text-wrapper-4">Локалізація</div>
+ <img class="img" src="img/group-17.png" />
+ </div>
+ </div>
+ <div class="frame-3">
+ <img class="SCP-LAB-secure-2" src="file:///C:/SCP%20icons/SCP%20LAB%20Secure%20Contain%20Protect.svg" />
+ <img class="image-2" src="file:///C:/SCP%20icons/Main%20Logo.svg" />
+ <div class="img-wrapper"><img class="image-2" src="file:///C:/SCP%20icons/Main%20Logo.svg" /></div>
+ </div>
+ <div class="frame-4">
+ <div class="div-wrapper"><div class="text-wrapper-5">Увійти в SCP LAB</div></div>
+ <div class="overlap-group"><div class="text-wrapper-6"></div>    <input type="text" id="username" name="username"  required style=" margin-left: 120px; height: 45px;  ">                    </div>
+ <div class="frame-5"><div class="text-wrapper-7">password</div> 
+                      <input type="password" id="password" name="password" required style=" margin-left: 120px; height: 45px;">                </div>
+ <div class="overlap">
+ <div class="text-wrapper-8"></div>
+ <button type="Login">Login</button>
+</div>
+
+ </div>
+ <div class="frame-6"><div class="text-wrapper-9">Забули пароль або логін?</div></div>
+ <div class="frame-wrapper">
+ <div class="frame-7">
+ <img class="vector" src="file:///C:/SCP%20icons/Discord.svg" />
+ <p class="p">+380 66 917 83 96</p>
+ <div class="text-wrapper-10">spclabsaport @gmail.com</div>
+ <img class="vector-2" src="file:///C:/SCP%20icons/Setting.svg" />
+ <img class="vector-3" src="file:///C:/SCP%20icons/Telegram.svg" />
+ </div>
+ </div>
+ </div>
+ </div>
+ </body>
+</html>
